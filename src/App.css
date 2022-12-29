@@ -1,38 +1,158 @@
-.App {
+.link {
+  font-size: 1rem;
+  transition: 300ms;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.link-project {
+  position: relative;
+  display: inline-block;
+  color: #939393;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 2px;
+  overflow: hidden;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link-project:nth-child(1) {
+  filter: hue-rotate(270deg);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.link-project:nth-child(2) {
+  filter: hue-rotate(110deg);
+}
+.link-project span {
+  position: absolute;
+  display: block;
+}
+.link-project span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #1d1c1cb4);
+  animation: animate1 3s linear infinite;
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+.link-project span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #1f1e1e97);
+  animation: animate2 3s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+.link-project span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #2c2b2b98);
+  animation: animate3 3s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-item {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 400ms;
+}
+.item-link-one {
+  transition: 300ms;
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  min-width: 50px;
+  width: 100%;
+  background: #767676f7;
+  opacity: 1;
+  height: 3px;
+  opacity: 0;
 }
 
-@keyframes App-logo-spin {
+.item-link:hover > .item-link-one {
+  transition: 300ms;
+  opacity: 1;
+}
+
+.title {
+  display: block;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 12ch;
+  animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+  overflow: hidden;  
+}
+
+.image-project {
+  object-fit: cover;
+  max-width: 80%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  border-radius: 8px;
+  min-height: 50%;
+}
+
+@keyframes typing {
   from {
-    transform: rotate(0deg);
+    width: 0;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
 }
+
+@keyframes blink {
+  50% {border-color: transparent;}
+}
+
+.link-project:hover {
+  background: linear-gradient(to right, #ffffff, #b9bbbc6d);
+}
+
+main {
+  
+}
+
