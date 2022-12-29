@@ -1,8 +1,8 @@
-import "./App.css";
-import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
-import Home from "./views/Home";
+import "./App.css"
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom"
+import Home from "./views/Home"
 import NavBar from './components/NavBar'
-import Footer from "./components/Footer";
+import Error from "./views/Error"
 
 function App() {
   return (
@@ -11,11 +11,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Dashboard/>}>
             <Route path="/" element={<Home/>}></Route>
+            <Route path="*" element={<Home/>}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
     </div>
-  );
+  )
 }
 
 function Dashboard() {
@@ -23,9 +24,8 @@ function Dashboard() {
     <>
       <NavBar/>
       <Outlet />
-      <Footer/>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
