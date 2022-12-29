@@ -8,19 +8,19 @@ function NavBar() {
         </div>
         <section className='flex flex-row gap-3'>
           <section className='navbar-item'>
-            <a href="#about" className='link item-link'>
+            <a href="#about" className='link item-link text-sm'>
               Sobre mi
               <span className="item-link-one"></span>
             </a>
           </section>
           <section className='navbar-item'>
-            <a href="#contact" className='link item-link'>
+            <a href="#contact" className='link item-link text-sm'>
               Contacto
               <span className="item-link-one"></span>
             </a>
           </section>
           <section className='navbar-item'>
-            <a href="#projects" className='link item-link'>
+            <a href="#projects" className='link item-link text-sm'>
               Proyectos
               <span className="item-link-one"></span>
             </a>

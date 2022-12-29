@@ -1,5 +1,4 @@
 .link {
-  font-size: 1rem;
   transition: 300ms;
 }
 nav {
@@ -153,9 +152,9 @@ nav {
 }
 
 main {
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  height: 100vh;
+  height: 100vh; */
   scroll-behavior: smooth;
 }
 
@@ -163,7 +162,7 @@ main::-webkit-scrollbar {display: none;}
 
 .one,.two,.three,.five{
   scroll-behavior: smooth;
-  height: 100vh;
+  /* height: 100vh; */
   scroll-snap-align: start;
 }
 .four {
