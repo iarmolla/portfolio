@@ -136,7 +136,7 @@ function Home() {
             <div className='flex flex-row justify-between'>
               <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>giphy-app</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
-                <a href="https://github.com/iarmolla/ecommerce-api">
+                <a href="https://github.com/iarmolla/giphy-app">
                   <FiGithub></FiGithub>
                 </a>
                 <BiLinkExternal></BiLinkExternal>
@@ -160,7 +160,7 @@ function Home() {
             <div className='flex flex-row justify-between'>
               <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Kanban-app</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
-                <a href="https://github.com/iarmolla/ecommerce-api">
+                <a href="https://github.com/iarmolla/kanban-app">
                   <FiGithub></FiGithub>
                 </a>
                 <BiLinkExternal></BiLinkExternal>
@@ -183,7 +183,7 @@ function Home() {
             <div className='flex flex-row justify-between'>
               <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Rick and Morty API</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
-                <a href="https://github.com/iarmolla/ecommerce-api">
+                <a href="https://github.com/iarmolla/rick-and-morty-react">
                   <FiGithub></FiGithub>
                 </a>
                 <BiLinkExternal></BiLinkExternal>
