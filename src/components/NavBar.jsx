@@ -4,7 +4,7 @@ function NavBar() {
   return (
       <nav className='text-neutral-400 flex justify-between items-center min-w-full shadow-sm py-4 px-5 bg-slate-50'>
         <div>
-          <h1 className='text-lg'>Portfolio</h1>
+          <h1 className='text-sm'>Portfolio</h1>
         </div>
         <section className='flex flex-row gap-3'>
           <section className='navbar-item'>

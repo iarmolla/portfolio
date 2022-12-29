@@ -153,6 +153,24 @@ nav {
 }
 
 main {
-  
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
 }
+
+main::-webkit-scrollbar {display: none;}
+
+.one,.two,.three,.five{
+  scroll-behavior: smooth;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+.four {
+  scroll-snap-align: start;
+}
+/* ,.three,.four */
+::-webkit-scrollbar { width: 9px; height: 9px;}
+::-webkit-scrollbar-button { width: 0px; height: 0px;}
+
 
