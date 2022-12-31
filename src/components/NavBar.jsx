@@ -2,7 +2,7 @@ import React from 'react'
 
 function NavBar() {
   return (
-      <nav className='text-neutral-400 flex justify-between items-center min-w-full shadow-sm py-4 px-5 bg-slate-50'>
+      <nav className='z-10 text-neutral-400 flex justify-between items-center min-w-full shadow-sm py-4 px-5 bg-slate-50'>
         <div>
           <h1 className='text-sm'>Portfolio</h1>
         </div>

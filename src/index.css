@@ -5,7 +5,60 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   padding: 0;
+}
+
+@keyframes test {
+  0% {
+    transform: scale(0.1) translateY(50%);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+.modal-animate {
+  animation: test 2s;
+}
+
+.error-text {
+  display: block;
+  opacity: 1;
+  animation-fill-mode: both;
+  animation-duration: 875ms;
+  animation-delay: 125ms;
+  animation-iteration-count: 1;
+  animation-name: errors;
+}
+
+@keyframes errors {
+  0% {
+    opacity: 0;
+    transform: translateY(0px) ;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
+
+@keyframes submit {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.button-submit {
+  display: block;
+  opacity: 1;
+  animation-fill-mode: both;
+  animation-duration: 875ms;
+  animation-delay: 125ms;
+  animation-iteration-count: 1;
+  animation-name: submit;
 }

@@ -1,5 +1,4 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
 import { BsLinkedin, BsGithub } from "react-icons/bs"
 import { BiLinkExternal } from "react-icons/bi"
 import { SiGmail, SiTailwindcss } from "react-icons/si"
@@ -11,12 +10,15 @@ import rick from '../assets/rick.PNG'
 import kanban from '../assets/kanban.PNG'
 import gif from '../assets/gif.PNG'
 import ecommerce from '../assets/ecommerce.PNG'
-
-
+import { Formik } from 'formik'
+import { useForm } from '@formspree/react';
+import Form from '../components/Form'
 
 function Home() {
+  const [state, submit] = useForm('mdovnqgv')
+  const [showModal, setShowModal] = useState(false);
   return (
-    <main className='lg:h-screen lg:snap-y lg:snap-mandatory lg:overflow-scroll'>      
+    <main className='lg:h-screen lg:snap-y lg:snap-mandatory lg:overflow-scroll'>
       <section className='text-center flex flex-col gap-3 justify-center items-center xl:m-0 one lg:h-screen mt-24 mb-10 lg:m-0 '>
         <article className='w-full xl:h-screen  flex flex-col justify-center items-center justify-items-center'>
           <h1 className='text-slate-700 title text-5xl xl:text-9xl'>Iván Armolla</h1>
@@ -96,8 +98,8 @@ function Home() {
               <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
                 <span className='absolute text-xl -top-10 left-0 text-orange-600'>Git</span>
                 <FaGitAlt className='text-orange-600'></FaGitAlt>
-              </div>              
-            </div>            
+              </div>
+            </div>
           </section>
         </div>
       </section>
@@ -209,23 +211,67 @@ function Home() {
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 className="mb-4 text-4xl tracking-tight text-zinc-400 text-center mt-6">Enviame un mensaje!</h2>
           <p className="lg:mb-10 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Si tienes alguna pregunta o quieres contactarme puedes usar el formulario</p>
-          <form action="#" className="space-y-8">
-            <div>
-              <label for="name" className="block mb-2 text-sm dark:text-gray-400">Nombre</label>
-              <input type="text" id="name" className="block p-3 w-full text-sm  bg-gray-50 rounded-lg border shadow-sm outline-none " placeholder="Ingrese su nombre" required />
-            </div>
-            <div>
-              <label for="email" className="block mb-2 text-sm  text-gray-900 dark:text-gray-300">Email</label>
-              <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg outline-none block w-full p-2.5" placeholder="nombre@gmail.com" required />
-            </div>
-            <div className="sm:col-span-2">
-              <label for="message" className="block mb-2 text-sm  text-gray-900 dark:text-gray-400">Mensage</label>
-              <textarea id="message" rows="6" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 outline-none" placeholder="Tu mensaje"></textarea>
-            </div>
-            <div className='flex justify-center'>
-              <button type="submit" className="py-1 px-24 text-lg font-medium text-center  border-2 border-slate-400 hover:bg-slate-200 hover:transition-transform transition-all text-zinc-500 rounded-md bg-primary-70 outline-none ">Aceptar</button>
-            </div>
-          </form>
+
+          <Formik
+            initialValues={{ name: '', email: '', message: '' }}
+            validate={(values) => {
+              let errors = {}
+              if (!values.message) {
+                errors.message = "* El mensaje no puede estar vacio *"
+              }
+              if (!values.name) {
+                errors.name = "* El nombre no puede estar vacio *"
+              }
+              if (!values.email) {
+                errors.email = '* El mail no puede estar vacio *';
+              } else if (
+                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+              ) {
+                errors.email = '* Direccion invalida revise su direccion *';
+              }
+              return errors
+            }}
+            onSubmit={(values, { resetForm }) => {
+              submit(values)
+              setShowModal(true)
+              resetForm()
+              setTimeout(() => setShowModal(false), 3000)
+            }}
+          >
+            {({ handleSubmit,
+              errors,
+              values,
+              touched,
+              handleChange,
+              handleBlur
+            }) => (
+              <form className="space-y-8" onSubmit={handleSubmit}>
+                <div>
+                  <label htmlFor="name" className="block mb-2 text-sm dark:text-gray-400" >Nombre</label>
+                  <input type="text" id="name" onBlur={handleBlur} value={values.name} onChange={handleChange} className={`block p-3 w-full text-sm  bg-gray-50 rounded-lg shadow-sm outline-none border`} placeholder="Ingrese su nombre" name="name" required />
+                  <label className={`${touched.name && errors.name ? 'error-text  text-sm font-semibold text-red-500' : 'hidden'}`}>{touched.name && errors.name}</label>
+                </div>
+                
+                <div>
+                  <label htmlFor="email" className={`block mb-2 text-sm  text-gray-900 dark:text-gray-300`}>Email</label>
+                  <input type="email" id="email" onChange={handleChange} onBlur={handleBlur} value={values.email} className={`shadow-sm bg-gray-50  text-gray-900 text-sm rounded-lg outline-none block w-full p-2.5 border border-gray-300`} placeholder="nombre@gmail.com" required name="email" />
+                  <label className={`${touched.email && errors.email ? 'error-text  text-sm font-semibold text-red-500' : 'hidden'}`}>{touched.email && errors.email}</label>
+                </div>
+                <div className="sm:col-span-2">
+                  <label htmlFor="message" className="block mb-2 text-sm  text-gray-900 dark:text-gray-400" >Mensage</label>
+                  <textarea id="message" rows="6" onChange={handleChange} onBlur={handleBlur} value={values.message} className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm outline-none border border-gray-300 `} placeholder="Tu mensaje" required name="message"></textarea>
+                  <label className={`${touched.message && errors.message ? 'error-text  text-sm font-semibold text-red-500' : 'hidden'}`}>{touched.message && errors.message}</label>
+                </div>
+                {
+                  !errors.name && !errors.email && !errors.message &&
+                  <div className='flex justify-center'>
+                    <button type="submit" disabled={state.submitting} className={`${ !errors.name && !errors.email && !errors.message ? 'button-submit' : 'hidden' } py-1 px-24 text-lg font-medium text-center  border-2 border-slate-400 hover:bg-slate-200 hover:transition-transform transition-all text-zinc-400 rounded-md bg-primary-70 outline-none`}>Enviar</button>
+                  </div>
+                }
+              </form>
+            )}
+          </Formik>
+          <Form setShowModal={setShowModal} showModal={showModal}></Form>
         </div>
       </section>
     </main>
