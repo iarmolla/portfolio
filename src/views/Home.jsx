@@ -17,6 +17,7 @@ import Form from '../components/Form'
 function Home() {
   const [state, submit] = useForm('mdovnqgv')
   const [showModal, setShowModal] = useState(false);
+  
   return (
     <main className='lg:h-screen lg:snap-y lg:snap-mandatory lg:overflow-scroll'>
       <section className='text-center flex flex-col gap-3 justify-center items-center xl:m-0 one lg:h-screen mt-24 mb-10 lg:m-0 '>
@@ -265,7 +266,7 @@ function Home() {
                 {
                   !errors.name && !errors.email && !errors.message &&
                   <div className='flex justify-center'>
-                    <button type="submit" disabled={state.submitting} className={`${ !errors.name && !errors.email && !errors.message ? 'button-submit' : 'hidden' } py-1 px-24 text-lg font-medium text-center  border-2 border-slate-400 hover:bg-slate-200 hover:transition-transform transition-all text-zinc-400 rounded-md bg-primary-70 outline-none`}>Enviar</button>
+                    <button type="submit" disabled={state.submitting} className={`${ !errors.name && !errors.email && !errors.message ? 'submit' : 'hidden' } py-1 px-24 text-lg font-medium text-center  border-2 border-slate-400 hover:bg-slate-200 hover:transition-transform transition-all text-zinc-400 rounded-md bg-primary-70 outline-none`}>Enviar</button>
                   </div>
                 }
               </form>
