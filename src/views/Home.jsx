@@ -17,10 +17,12 @@ import Form from '../components/Form'
 function Home() {
   const [state, submit] = useForm('mdovnqgv')
   const [showModal, setShowModal] = useState(false);
-  
+
   return (
     <main className='lg:h-screen lg:snap-y lg:snap-mandatory lg:overflow-scroll'>
-      <section className='text-center flex flex-col gap-3 justify-center items-center xl:m-0 one lg:h-screen mt-24 mb-10 lg:m-0 '>
+      {/* <section className='h-screen text-center flex flex-col gap-3 justify-center items-center xl:m-0 one mt-24 mb-10 lg:m-0 '> */}
+      <section className='text-center flex flex-col gap-3 justify-center items-center xl:m-0 one lg:h-screen mt-24 mb-10 lg:m-0'>
+
         <article className='w-full xl:h-screen  flex flex-col justify-center items-center justify-items-center'>
           <h1 className='text-slate-700 title text-5xl xl:text-9xl'>Iván Armolla</h1>
           <h2 className='text-4xl text-slate-800 xl:text-7xl'>Front-end Developer.</h2>
@@ -46,10 +48,16 @@ function Home() {
             ¡Hola! mi nombre es Iván y me gusta el mundo de desarrollo web. Empecé a introducirme a este mundo, por mi interes en el desarrollo de videojuegos, que siempre fuí muy apasionado. Al finalizar la secundaria empecé a investigar como desarrollar juegos y me encontre con el desarrollo web, decidi a hacer algunos cursos de html y css para ir sentando bases en el desarrollo y meterme en la tecnicatura de analisis de sistemas para poder formarme.
           </p>
         </article>
-        <article className='flex justify-center gap-8 cursor-pointer text-gray-600 py-6 text-3xl'>
-          <BsLinkedin className='hover:text-slate-500 transition-all'></BsLinkedin>
+        <article className='flex justify-center gap-8 cursor-pointer text-gray-600 py-6 text-3xl'>          
+           <a href="https://www.linkedin.com/in/ivan-pablo-armolla-7b5856219/" target={'_blank'}>
+           <BsLinkedin className='hover:text-slate-500 transition-all'></BsLinkedin>
+          </a>          
+          <a href="mailto:ivan.armolla@gmail.com?" target={'_blank'}>
           <SiGmail className='hover:text-slate-500 transition-all'></SiGmail>
-          <BsGithub className='hover:text-slate-500 transition-all'></BsGithub>
+          </a>      
+          <a href="https://github.com/iarmolla" target={'_blank'}>
+            <BsGithub className='hover:text-slate-500 transition-all'></BsGithub>
+          </a>
         </article>
         <div className='hidden xl:block xl:text-5xl xl:mt-7 xl:text-slate-600 xl:cursor-pointer xl:animate-bounce xl:hover:text-slate-500 xl:transition-all'>
           <a href="#skills">
@@ -58,55 +66,54 @@ function Home() {
         </div>
       </section>
       <section className='text-center flex flex-col gap-3 justify-center items-center xl:m-0 lg:h-screen three' id="skills">
-        <div className='flex flex-col justify-center items-center justify-items-center pb-20'>
-          <h4 className='link-project text-slate-500 text-2xl text-center rounded-sm uppercase p-2 mb-16 my<-6 lg:mt-28'>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            HABILIDADES
-          </h4>
-          <section className='rounded-md text-center font-sans'>
-            <div className='flex flex-col justify-center items-center  gap-14 text-9xl uppercase font-medium sm:grid sm:grid-cols-2 lg:grid lg:grid-cols-4'>
-              <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
-                <span className='absolute text-xl -top-10 left-0 text-orange-500'>Html5</span>
-                <FaHtml5 className='text-orange-500'></FaHtml5>
-              </div>
-              <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
-                <span className='absolute text-xl -top-10 left-0 text-sky-400'>Css3</span>
-                <DiCss3 className='text-sky-400'></DiCss3>
-              </div>
-              <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
-                <span className='absolute text-xl -top-10 left-0 text-indigo-500'>Bootstrap</span>
-                <FaBootstrap className='text-indigo-500'></FaBootstrap>
-              </div>
-              <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
-                <span className='absolute text-xl -top-10 left-0 text-sky-500'>Tailwind</span>
-                <SiTailwindcss className='text-sky-500'></SiTailwindcss>
-              </div>
-              <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
-                <span className='absolute text-xl -top-10 left-0 text-yellow-400'>Javascript</span>
-                <DiJsBadge className='text-yellow-400'></DiJsBadge>
-              </div>
-              <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
-                <span className='absolute text-xl -top-10 left-0 text-cyan-400'>React</span>
-                <FaReact className='text-cyan-400'></FaReact>
-              </div>
-              <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
-                <span className='absolute text-xl -top-10 left-0 text-red-600'>Angular</span>
-                <FaAngular className='text-red-600'></FaAngular>
-              </div>
-              <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
-                <span className='absolute text-xl -top-10 left-0 text-orange-600'>Git</span>
-                <FaGitAlt className='text-orange-600'></FaGitAlt>
-              </div>
+        <h4 className='link-project text-slate-500 text-2xl text-center rounded-sm uppercase p-2 mb-16 lg:mt-0'>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          HABILIDADES
+        </h4>
+        <section className='rounded-md text-center font-sans'>
+          <div className='flex flex-col justify-center items-center  gap-14 text-8xl uppercase font-medium sm:grid sm:grid-cols-2 lg:grid lg:grid-cols-4'>
+            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
+              <span className='absolute text-xl -top-10 left-0 text-orange-500'>Html5</span>
+              <FaHtml5 className='text-orange-500'></FaHtml5>
             </div>
-          </section>
-        </div>
+            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
+              <span className='absolute text-xl -top-10 left-0 text-sky-400'>Css3</span>
+              <DiCss3 className='text-sky-400'></DiCss3>
+            </div>
+            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
+              <span className='absolute text-xl -top-10 left-0 text-indigo-500'>Bootstrap</span>
+              <FaBootstrap className='text-indigo-500'></FaBootstrap>
+            </div>
+            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
+              <span className='absolute text-xl -top-10 left-0 text-sky-500'>Tailwind</span>
+              <SiTailwindcss className='text-sky-500'></SiTailwindcss>
+            </div>
+            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
+              <span className='absolute text-xl -top-10 left-0 text-yellow-400'>Javascript</span>
+              <DiJsBadge className='text-yellow-400'></DiJsBadge>
+            </div>
+            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
+              <span className='absolute text-xl -top-10 left-0 text-cyan-400'>React</span>
+              <FaReact className='text-cyan-400'></FaReact>
+            </div>
+            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
+              <span className='absolute text-xl -top-10 left-0 text-red-600'>Angular</span>
+              <FaAngular className='text-red-600'></FaAngular>
+            </div>
+            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
+              <span className='absolute text-xl -top-10 left-0 text-orange-600'>Git</span>
+              <FaGitAlt className='text-orange-600'></FaGitAlt>
+            </div>
+          </div>
+        </section>
+
       </section>
       <section className='text-center flex flex-col gap-3 justify-center items-center xl:m-0 lg:pb-32 four' >
         <section className='flex flex-col justify-center items-center gap-4 lg:pb-24' id="projects">
-          <h4 className='link-project text-slate-500 text-2xl text-center rounded-sm uppercase p-2 lg:mt-20' >
+          <h4 className='link-project text-slate-500 text-2xl mt-14 text-center rounded-sm uppercase p-2 lg:mt-20' >
             <span></span>
             <span></span>
             <span></span>
@@ -118,7 +125,9 @@ function Home() {
                 <a href="https://github.com/iarmolla/ecommerce-api">
                   <FiGithub></FiGithub>
                 </a>
-                <BiLinkExternal></BiLinkExternal>
+                <a href="https://ecommerce-167.netlify.app/" target={'_blank'}>
+                  <BiLinkExternal></BiLinkExternal>
+                </a>
               </div>
             </div>
             <div>
@@ -139,10 +148,12 @@ function Home() {
             <div className='flex flex-row justify-between'>
               <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>giphy-app</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
-                <a href="https://github.com/iarmolla/giphy-app">
+                <a href="https://github.com/iarmolla/giphy-app" target={"_blank"}>
                   <FiGithub></FiGithub>
                 </a>
-                <BiLinkExternal></BiLinkExternal>
+                <a href="https://giphy-645.netlify.app/" target={"_blank"}>
+                  <BiLinkExternal></BiLinkExternal>
+                </a>
               </div>
             </div>
             <div>
@@ -163,10 +174,12 @@ function Home() {
             <div className='flex flex-row justify-between'>
               <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Kanban-app</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
-                <a href="https://github.com/iarmolla/kanban-app">
+                <a href="https://github.com/iarmolla/kanban-app" target={"_blank"}>
                   <FiGithub></FiGithub>
                 </a>
-                <BiLinkExternal></BiLinkExternal>
+                <a href="#" target={"_blank"}>
+                  <BiLinkExternal></BiLinkExternal>
+                </a>
               </div>
             </div>
             <div>
@@ -189,7 +202,9 @@ function Home() {
                 <a href="https://github.com/iarmolla/rick-and-morty-react">
                   <FiGithub></FiGithub>
                 </a>
-                <BiLinkExternal></BiLinkExternal>
+                <a href="https://magenta-hummingbird-5754c9.netlify.app/" target={"_blank"}>
+                  <BiLinkExternal></BiLinkExternal>
+                </a>
               </div>
             </div>
             <div>
@@ -208,8 +223,8 @@ function Home() {
           </article>
         </section>
       </section>
-      <section className="five lg:pb-48" id="contact">
-        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+      <section className="five" id="contact">
+        <div className="mx-auto max-w-screen-md">
           <h2 className="mb-4 text-4xl tracking-tight text-zinc-400 text-center mt-6">Enviame un mensaje!</h2>
           <p className="lg:mb-10 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Si tienes alguna pregunta o quieres contactarme puedes usar el formulario</p>
 
@@ -246,13 +261,13 @@ function Home() {
               handleChange,
               handleBlur
             }) => (
-              <form className="space-y-8" onSubmit={handleSubmit}>
+              <form className="space-y-8 mb-7 mx-1" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block mb-2 text-sm dark:text-gray-400" >Nombre</label>
                   <input type="text" id="name" onBlur={handleBlur} value={values.name} onChange={handleChange} className={`block p-3 w-full text-sm  bg-gray-50 rounded-lg shadow-sm outline-none border`} placeholder="Ingrese su nombre" name="name" required />
                   <label className={`${touched.name && errors.name ? 'error-text  text-sm font-semibold text-red-500' : 'hidden'}`}>{touched.name && errors.name}</label>
                 </div>
-                
+
                 <div>
                   <label htmlFor="email" className={`block mb-2 text-sm  text-gray-900 dark:text-gray-300`}>Email</label>
                   <input type="email" id="email" onChange={handleChange} onBlur={handleBlur} value={values.email} className={`shadow-sm bg-gray-50  text-gray-900 text-sm rounded-lg outline-none block w-full p-2.5 border border-gray-300`} placeholder="nombre@gmail.com" required name="email" />
@@ -266,7 +281,7 @@ function Home() {
                 {
                   !errors.name && !errors.email && !errors.message &&
                   <div className='flex justify-center'>
-                    <button type="submit" disabled={state.submitting} className={`${ !errors.name && !errors.email && !errors.message ? 'submit' : 'hidden' } py-1 px-24 text-lg font-medium text-center  border-2 border-slate-400 hover:bg-slate-200 hover:transition-transform transition-all text-zinc-400 rounded-md bg-primary-70 outline-none`}>Enviar</button>
+                    <button type="submit" disabled={state.submitting} className={`${!errors.name && !errors.email && !errors.message ? 'submit' : 'hidden'} py-1 px-24 text-lg font-medium text-center  border-2 border-slate-400 hover:bg-slate-200 hover:transition-transform transition-all text-zinc-400 rounded-md bg-primary-70 outline-none`}>Enviar</button>
                   </div>
                 }
               </form>
