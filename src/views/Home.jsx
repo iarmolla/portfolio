@@ -49,13 +49,13 @@ function Home() {
             ¡Hola! mi nombre es Iván y me gusta el mundo de desarrollo web. Empecé a introducirme a este mundo, por mi interes en el desarrollo de videojuegos, que siempre fuí muy apasionado. Al finalizar la secundaria empecé a investigar como desarrollar juegos y me encontre con el desarrollo web, decidi a hacer algunos cursos de HTML y CSS para ir sentando bases en el desarrollo y meterme en la tecnicatura de analisis de sistemas para poder formarme.
           </p>
         </article>
-        <article className='flex justify-center gap-8 cursor-pointer text-gray-600 py-6 text-3xl'>          
-           <a href="https://www.linkedin.com/in/ivan-pablo-armolla-7b5856219/" target={'_blank'}>
-           <BsLinkedin className='hover:text-slate-500 transition-all'></BsLinkedin>
-          </a>          
+        <article className='flex justify-center gap-8 cursor-pointer text-gray-600 py-6 text-3xl'>
+          <a href="https://www.linkedin.com/in/ivan-pablo-armolla-7b5856219/" target={'_blank'}>
+            <BsLinkedin className='hover:text-slate-500 transition-all'></BsLinkedin>
+          </a>
           <a href="mailto:ivan.armolla@gmail.com?" target={'_blank'}>
-          <SiGmail className='hover:text-slate-500 transition-all'></SiGmail>
-          </a>      
+            <SiGmail className='hover:text-slate-500 transition-all'></SiGmail>
+          </a>
           <a href="https://github.com/iarmolla" target={'_blank'}>
             <BsGithub className='hover:text-slate-500 transition-all'></BsGithub>
           </a>
@@ -108,9 +108,8 @@ function Home() {
               <span className='absolute text-xl -top-10 left-0 text-orange-600'>Git</span>
               <FaGitAlt className='text-orange-600'></FaGitAlt>
             </div>
-          </div>
+          </div>         
         </section>
-
       </section>
       <section className='text-center flex flex-col gap-3 justify-center items-center xl:m-0 lg:pb-32 four' >
         <section className='flex flex-col justify-center items-center gap-4 lg:pb-24' id="projects">
@@ -123,7 +122,7 @@ function Home() {
             <div className='flex flex-row justify-between'>
               <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Ecommerce</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
-                <a href="https://github.com/iarmolla/ecommerce-api">
+                <a href="https://github.com/iarmolla/ecommerce-api" target={'_blank'}>
                   <FiGithub></FiGithub>
                 </a>
                 <a href="https://ecommerce-167.netlify.app/" target={'_blank'}>
@@ -175,7 +174,7 @@ function Home() {
             <div className='flex flex-row justify-between'>
               <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Proet cursos</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
-                <a href="https://github.com/iarmolla/course-react">
+                <a href="https://github.com/iarmolla/course-react" target={'_blank'}>
                   <FiGithub></FiGithub>
                 </a>
                 <a href="https://proet-e6dfc9.netlify.app/" target={"_blank"}>
@@ -189,8 +188,8 @@ function Home() {
               </figure>
             </div>
             <p className='m-3'><span className='text-gray-500 uppercase font-semibold'>Proet</span> aplicacion de cursos para suscribirte a los distintos cursos.
-            Sección de compras con tarjeta de credito validaciones de email y envios del mismo al finalizar la compra.
-            </p>                          
+              Sección de compras con tarjeta de credito validaciones de email y envios del mismo al finalizar la compra.
+            </p>
             <div className='flex flex-row gap-3 pl-3 my-5 font-bold flex-wrap'>
               <span>React</span>
               <span>Email JS</span>
@@ -204,7 +203,7 @@ function Home() {
                 <a href="https://github.com/iarmolla/kanban-app" target={"_blank"}>
                   <FiGithub></FiGithub>
                 </a>
-                <a href="#" target={"_blank"}>
+                <a href="https://app.netlify.com/sites/kanban-645/overview" target={"_blank"}>
                   <BiLinkExternal></BiLinkExternal>
                 </a>
               </div>
@@ -221,12 +220,12 @@ function Home() {
               <span>React</span>
               <span>MUI</span>
             </div>
-          </article>          
+          </article>
           <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 m-3 sm:mx-20 md:mx-20 lg:mx-24 xl:mx-48'>
             <div className='flex flex-row justify-between'>
               <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Rick and Morty API</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
-                <a href="https://github.com/iarmolla/rick-and-morty-react">
+                <a href="https://github.com/iarmolla/rick-and-morty-react" target={'_blank'}>
                   <FiGithub></FiGithub>
                 </a>
                 <a href="https://magenta-hummingbird-5754c9.netlify.app/" target={"_blank"}>
@@ -248,7 +247,7 @@ function Home() {
               <span>Rick and Morty API</span>
             </div>
           </article>
-          
+
         </section>
       </section>
       <section className="five" id="contact">
