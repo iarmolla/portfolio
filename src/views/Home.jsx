@@ -8,6 +8,7 @@ import { DiJsBadge, DiCss3 } from "react-icons/di"
 import { FiGithub } from "react-icons/fi"
 import rick from '../assets/rick.PNG'
 import kanban from '../assets/kanban.PNG'
+import proet from '../assets/proet.PNG'
 import gif from '../assets/gif.PNG'
 import ecommerce from '../assets/ecommerce.PNG'
 import { Formik } from 'formik'
@@ -170,6 +171,32 @@ function Home() {
               <span>Giphy API</span>
             </div>
           </article>
+          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 m-3 sm:mx-20 md:mx-20 lg:mx-24 xl:mx-48'>
+            <div className='flex flex-row justify-between'>
+              <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Proet cursos</span>
+              <div className='flex flex-row gap-2 text-xl cursor-pointer'>
+                <a href="https://github.com/iarmolla/course-react">
+                  <FiGithub></FiGithub>
+                </a>
+                <a href="https://proet-e6dfc9.netlify.app/" target={"_blank"}>
+                  <BiLinkExternal></BiLinkExternal>
+                </a>
+              </div>
+            </div>
+            <div>
+              <figure className='flex flex-col justify-center items-center py-2'>
+                <img src={proet} className="image-project" alt="rick and morty project" />
+              </figure>
+            </div>
+            <p className='m-3'><span className='text-gray-500 uppercase font-semibold'>Proet</span> aplicacion de cursos para suscribirte a los distintos cursos.
+            Sección de compras con tarjeta de credito validaciones de email y envios del mismo al finalizar la compra.
+            </p>                          
+            <div className='flex flex-row gap-3 pl-3 my-5 font-bold flex-wrap'>
+              <span>React</span>
+              <span>Email JS</span>
+              <span>Abstract API</span>
+            </div>
+          </article>
           <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 m-3 md:mx-20 sm:mx-20 lg:mx-24 xl:mx-48'>
             <div className='flex flex-row justify-between'>
               <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Kanban-app</span>
@@ -194,7 +221,7 @@ function Home() {
               <span>React</span>
               <span>MUI</span>
             </div>
-          </article>
+          </article>          
           <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 m-3 sm:mx-20 md:mx-20 lg:mx-24 xl:mx-48'>
             <div className='flex flex-row justify-between'>
               <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Rick and Morty API</span>
@@ -221,6 +248,7 @@ function Home() {
               <span>Rick and Morty API</span>
             </div>
           </article>
+          
         </section>
       </section>
       <section className="five" id="contact">
