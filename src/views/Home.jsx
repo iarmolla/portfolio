@@ -46,7 +46,7 @@ function Home() {
         </div>
         <article>
           <p className='text-gray-600 mx-6 md:mx-48 xl:text-2xl' >
-            ¡Hola! mi nombre es Iván y me gusta el mundo de desarrollo web. Empecé a introducirme a este mundo, por mi interes en el desarrollo de videojuegos, que siempre fuí muy apasionado. Al finalizar la secundaria empecé a investigar como desarrollar juegos y me encontre con el desarrollo web, decidi a hacer algunos cursos de html y css para ir sentando bases en el desarrollo y meterme en la tecnicatura de analisis de sistemas para poder formarme.
+            ¡Hola! mi nombre es Iván y me gusta el mundo de desarrollo web. Empecé a introducirme a este mundo, por mi interes en el desarrollo de videojuegos, que siempre fuí muy apasionado. Al finalizar la secundaria empecé a investigar como desarrollar juegos y me encontre con el desarrollo web, decidi a hacer algunos cursos de HTML y CSS para ir sentando bases en el desarrollo y meterme en la tecnicatura de analisis de sistemas para poder formarme.
           </p>
         </article>
         <article className='flex justify-center gap-8 cursor-pointer text-gray-600 py-6 text-3xl'>          
