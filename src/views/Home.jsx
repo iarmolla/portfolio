@@ -108,7 +108,7 @@ function Home() {
               <span className='absolute text-xl -top-10 left-0 text-orange-600'>Git</span>
               <FaGitAlt className='text-orange-600'></FaGitAlt>
             </div>
-          </div>         
+          </div>
         </section>
       </section>
       <section className='text-center flex flex-col gap-3 justify-center items-center xl:m-0 lg:pb-32 four' >
@@ -146,7 +146,7 @@ function Home() {
           </article>
           <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 m-3 md:mx-20 sm:mx-20 lg:mx-24 xl:mx-48'>
             <div className='flex flex-row justify-between'>
-              <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>giphy-app</span>
+              <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Giphy-app</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
                 <a href="https://github.com/iarmolla/giphy-app" target={"_blank"}>
                   <FiGithub></FiGithub>
@@ -238,7 +238,7 @@ function Home() {
                 <img src={rick} className="image-project" alt="rick and morty project" />
               </figure>
             </div>
-            <p className='m-3'>Web app para ver los personajes de <span className='text-gray-500 uppercase font-semibold'>Rick and morty</span> y sus episodios y fechas de estreno, para las llamadas a la API se hizo uso de <span className='text-gray-500 font-semibold uppercase'>AXIOS</span>.</p>
+            <p className='m-3'>Web app para ver los personajes de <span className='text-gray-500 uppercase font-semibold'>Rick and morty</span> y sus episodios y fechas de  estreno, para las llamadas a la API se hizo uso de <span className='text-gray-500 font-semibold uppercase'>AXIOS</span>.</p>
             <p className='pl-3'>para el manejo de estilos se uso <span className='uppercase text-sky-500 font-semibold'>Tailwind</span>.
             </p>
             <div className='flex flex-row gap-3 pl-3 my-5 font-bold flex-wrap'>
@@ -247,14 +247,12 @@ function Home() {
               <span>Rick and Morty API</span>
             </div>
           </article>
-
         </section>
       </section>
       <section className="five" id="contact">
         <div className="mx-auto max-w-screen-md">
           <h2 className="mb-4 text-4xl tracking-tight text-zinc-400 text-center mt-6">Enviame un mensaje!</h2>
           <p className="lg:mb-10 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Si tienes alguna pregunta o quieres contactarme puedes usar el formulario</p>
-
           <Formik
             initialValues={{ name: '', email: '', message: '' }}
             validate={(values) => {
@@ -294,7 +292,6 @@ function Home() {
                   <input type="text" id="name" onBlur={handleBlur} value={values.name} onChange={handleChange} className={`block p-3 w-full text-sm  bg-gray-50 rounded-lg shadow-sm outline-none border`} placeholder="Ingrese su nombre" name="name" required />
                   <label className={`${touched.name && errors.name ? 'error-text  text-sm font-semibold text-red-500' : 'hidden'}`}>{touched.name && errors.name}</label>
                 </div>
-
                 <div>
                   <label htmlFor="email" className={`block mb-2 text-sm  text-gray-900 dark:text-gray-300`}>Email</label>
                   <input type="email" id="email" onChange={handleChange} onBlur={handleBlur} value={values.email} className={`shadow-sm bg-gray-50  text-gray-900 text-sm rounded-lg outline-none block w-full p-2.5 border border-gray-300`} placeholder="nombre@gmail.com" required name="email" />
