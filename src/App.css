@@ -129,12 +129,17 @@ nav {
 }
 
 .image-project {
+  transition: 300ms;
   object-fit: cover;
   max-width: 80%;
   overflow-clip-margin: content-box;
   overflow: clip;
   border-radius: 8px;
   min-height: 50%;
+}
+
+.image-project:hover {
+  transition: 300ms;
 }
 
 @keyframes typing {
@@ -164,3 +169,13 @@ main::-webkit-scrollbar {display: none;}
 ::-webkit-scrollbar-button { width: 0px; height: 0px;}
 
 
+.form__submit {
+  color: rgba(150, 148, 148, 0.674);
+  background-color: #eaeaea;
+  transition: 300ms;
+}
+
+.form__submit:hover {
+  transition: 300ms;
+  background-color: rgba(224, 224, 224, 0.9);
+}
