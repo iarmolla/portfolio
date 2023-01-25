@@ -20,11 +20,11 @@ function Home() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <main className='lg:h-screen lg:snap-y lg:snap-mandatory lg:overflow-scroll'>      
+    <main className='lg:h-screen lg:snap-y lg:snap-mandatory lg:overflow-scroll'>
       <section className='text-center flex flex-col gap-3 justify-center items-center xl:m-0 one lg:h-screen mt-24 mb-10 lg:m-0'>
         <article className='w-full xl:h-screen  flex flex-col justify-center items-center justify-items-center'>
-          <h1 className='text-slate-700 title text-5xl xl:text-9xl'>Iván Armolla</h1>
-          <h2 className='text-4xl text-slate-800 xl:text-7xl'>Front-end Developer.</h2>
+          <h1 className='text-slate-700 title text-5xl lg:text-9xl  xl:text-9xl'>Iván Armolla</h1>
+          <h2 className='text-4xl text-slate-800 lg:text-4xl xl:text-7xl'>Front-end Developer.</h2>
           <div className='hidden xl:block xl:text-5xl xl:mt-16 xl:text-slate-600 xl:cursor-pointer xl:animate-bounce xl:hover:text-slate-500 xl:transition-all'>
             <a href="#about">
               <AiOutlineArrowDown></AiOutlineArrowDown>
@@ -43,7 +43,7 @@ function Home() {
           </button>
         </div>
         <article>
-          <p className='text-gray-600 mx-6  md:mx-48 xl:text-2xl' >
+          <p className='text-gray-600 mx-6 md:mx-48 xl:text-2xl' >
             ¡Hola! mi nombre es Iván y me apasiona el desarrollo web y todo lo relacionado. Empecé a introducirme a este mundo, por mi interes en el desarrollo de videojuegos. Al finalizar la secundaria empecé a investigar como desarrollar juegos y me encontre con el desarrollo web, al final me decidí ir por web y hacer algunos cursos de HTML y CSS para ir sentando bases en el desarrollo y meterme en la tecnicatura de analisis de sistemas para poder formarme.
           </p>
         </article>
@@ -72,7 +72,7 @@ function Home() {
           <span></span>
           HABILIDADES
         </h4>
-        <section className='rounded-md text-center font-sans'>
+        <section className='rounded-md text-center font-sans relative'>
           <div className='flex flex-col justify-center items-center gap-14 text-8xl uppercase font-medium sm:grid sm:grid-cols-2 lg:grid lg:grid-cols-4'>
             <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
               <span className='absolute text-xl -top-10 left-0 text-orange-500'>Html5</span>
@@ -106,6 +106,11 @@ function Home() {
               <span className='absolute text-xl -top-10 left-0 text-orange-600'>Git</span>
               <FaGitAlt className='text-orange-600'></FaGitAlt>
             </div>
+          </div>
+          <div className='hidden xl:text-5xl xl:mt-7 xl:text-slate-600 xl:cursor-pointer xl:animate-bounce xl:hover:text-slate-500 xl:transition-all xl:absolute xl:w-full xl:flex xl:justify-center xl:items-center'>
+            <a href="#projects">
+              <AiOutlineArrowDown></AiOutlineArrowDown>
+            </a>
           </div>
         </section>
       </section>
@@ -231,9 +236,9 @@ function Home() {
                 </a>
               </div>
             </div>
-            <div>             
+            <div>
               <a href="https://magenta-hummingbird-5754c9.netlify.app/" target={"_blank"} className='flex flex-col justify-center items-center py-2 overflow-hidden'>
-                <img src={rick} className="image-project hover:scale-75" alt="rick and morty project"/>
+                <img src={rick} className="image-project hover:scale-75" alt="rick and morty project" />
               </a>
             </div>
             <p className='m-3'>Web app para ver los personajes de <span className='text-gray-500 uppercase font-semibold'>Rick and morty</span> y sus episodios y fechas de  estreno, para las llamadas a la API se hizo uso de <span className='text-gray-500 font-semibold uppercase'>AXIOS</span>.</p>
