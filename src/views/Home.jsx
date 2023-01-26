@@ -292,17 +292,17 @@ function Home() {
               <form className="space-y-8 mb-7 mx-1" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block mb-2 text-sm  text-gray-400" >Nombre</label>
-                  <input type="text" id="name" onBlur={handleBlur} value={values.name} onChange={handleChange} className={`block p-3 w-full text-sm  bg-gray-50 dark:bg-zinc-900 rounded-lg shadow-sm outline-none border`} placeholder="Ingrese su nombre" name="name" required />
+                  <input type="text" id="name" onBlur={handleBlur} value={values.name} onChange={handleChange} className={`block p-3 w-full text-sm  bg-gray-50 dark:bg-zinc-900 dark:text-gray-400 rounded-lg shadow-sm outline-none border`} placeholder="Ingrese su nombre" name="name" required />
                   <label className={`${touched.name && errors.name ? 'error-text  text-sm font-semibold text-red-400' : 'hidden'}`}>{touched.name && errors.name}</label>
                 </div>
                 <div>
                   <label htmlFor="email" className={`block mb-2 text-sm  text-gray-400`}>Email</label>
-                  <input type="email" id="email" onChange={handleChange} onBlur={handleBlur} value={values.email} className={`shadow-sm bg-gray-50 dark:bg-zinc-900  text-gray-900 text-sm rounded-lg outline-none block w-full p-2.5 border border-gray-300`} placeholder="nombre@gmail.com" required name="email" />
+                  <input type="email" id="email" onChange={handleChange} onBlur={handleBlur} value={values.email} className={`shadow-sm bg-gray-50 dark:bg-zinc-900  text-gray-900 dark:text-gray-400 text-sm rounded-lg outline-none block w-full p-2.5 border border-gray-300`} placeholder="nombre@gmail.com" required name="email" />
                   <label className={`${touched.email && errors.email ? 'error-text  text-sm font-semibold text-red-400' : 'hidden'}`}>{touched.email && errors.email}</label>
                 </div>
                 <div className="sm:col-span-2">
                   <label htmlFor="message" className="block mb-2 text-sm  text-gray-400" >Mensage</label>
-                  <textarea id="message" rows="6" onChange={handleChange} onBlur={handleBlur} value={values.message} className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-50 dark:bg-zinc-900 rounded-lg shadow-sm outline-none border border-gray-300 `} placeholder="Tu mensaje" required name="message"></textarea>
+                  <textarea id="message" rows="6" onChange={handleChange} onBlur={handleBlur} value={values.message} className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-50 dark:text-gray-400 dark:bg-zinc-900 rounded-lg shadow-sm outline-none border border-gray-300 `} placeholder="Tu mensaje" required name="message"></textarea>
                   <label className={`${touched.message && errors.message ? 'error-text  text-sm font-semibold text-red-400' : 'hidden'}`}>{touched.message && errors.message}</label>
                 </div>
                 {
