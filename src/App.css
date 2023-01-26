@@ -2,7 +2,7 @@
   transition: 300ms;
 }
 nav {
-  position: sticky;
+  position: absolute;
   top: 0;
   z-index: 100;
 }
