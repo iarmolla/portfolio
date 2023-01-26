@@ -20,8 +20,8 @@ function Home() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <main className='lg:h-screen lg:snap-y lg:snap-mandatory lg:overflow-scroll'>
-      <section className='text-center flex flex-col gap-3 justify-center items-center xl:m-0 one lg:h-screen mt-24 mb-10 lg:m-0'>
+    <main className='lg:h-screen lg:snap-y lg:snap-mandatory lg:overflow-scroll dark:bg-black'>
+      <section className='text-center pt-10 sm:pt-24 md:pt-10 dark:m-0 dark:pt-48 dark:pb-14 flex flex-col gap-3 justify-center items-center xl:m-0 one lg:h-screen mt-24 mb-10 lg:m-0 lg:p-0 '>
         <article className='w-full xl:h-screen  flex flex-col justify-center items-center justify-items-center'>
           <h1 className='text-slate-700 title text-5xl lg:text-9xl  xl:text-9xl'>Iván Armolla</h1>
           <h2 className='text-4xl text-slate-800 lg:text-4xl xl:text-7xl'>Front-end Developer.</h2>
@@ -74,37 +74,37 @@ function Home() {
         </h4>
         <section className='rounded-md text-center font-sans relative'>
           <div className='flex flex-col justify-center items-center gap-14 text-8xl uppercase font-medium sm:grid sm:grid-cols-2 lg:grid lg:grid-cols-4'>
-            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
-              <span className='absolute text-xl -top-10 left-0 text-orange-500'>Html5</span>
-              <FaHtml5 className='text-orange-500'></FaHtml5>
+            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200 dark:border-gray-500'>
+              <span className='absolute text-xl -top-10 left-0 text-orange-500 dark:text-gray-600'>Html5</span>
+              <FaHtml5 className='text-orange-500 dark:text-orange-700'></FaHtml5>
             </div>
-            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
-              <span className='absolute text-xl -top-10 left-0 text-sky-400'>Css3</span>
-              <DiCss3 className='text-sky-400'></DiCss3>
+            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200 dark:border-gray-500'>
+              <span className='absolute text-xl -top-10 left-0 text-sky-400 dark:text-gray-600'>Css3</span>
+              <DiCss3 className='text-sky-400 dark:text-sky-600'></DiCss3>
             </div>
-            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
-              <span className='absolute text-xl -top-10 left-0 text-indigo-500'>Bootstrap</span>
-              <FaBootstrap className='text-indigo-500'></FaBootstrap>
+            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200 dark:border-gray-500'>
+              <span className='absolute text-xl -top-10 left-0 text-indigo-500 dark:text-gray-600'>Bootstrap</span>
+              <FaBootstrap className='text-indigo-500 dark:text-indigo-700'></FaBootstrap>
             </div>
-            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
-              <span className='absolute text-xl -top-10 left-0 text-sky-500'>Tailwind</span>
-              <SiTailwindcss className='text-sky-500'></SiTailwindcss>
+            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200 dark:border-gray-500'>
+              <span className='absolute text-xl -top-10 left-0 text-sky-500 dark:text-gray-600'>Tailwind</span>
+              <SiTailwindcss className='text-sky-500 dark:text-sky-600'></SiTailwindcss>
             </div>
-            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
-              <span className='absolute text-xl -top-10 left-0 text-yellow-400'>Javascript</span>
-              <DiJsBadge className='text-yellow-400'></DiJsBadge>
+            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200 dark:border-gray-500'>
+              <span className='absolute text-xl -top-10 left-0 text-yellow-400 dark:text-gray-600'>Javascript</span>
+              <DiJsBadge className='text-yellow-400 dark:text-yellow-600'></DiJsBadge>
             </div>
-            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
-              <span className='absolute text-xl -top-10 left-0 text-cyan-400'>React</span>
-              <FaReact className='text-cyan-400'></FaReact>
+            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200 dark:border-gray-500'>
+              <span className='absolute text-xl -top-10 left-0 text-cyan-400 dark:text-gray-600'>React</span>
+              <FaReact className='text-cyan-400 dark:text-cyan-600'></FaReact>
             </div>
-            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
-              <span className='absolute text-xl -top-10 left-0 text-red-600'>Angular</span>
-              <FaAngular className='text-red-600'></FaAngular>
+            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200 dark:border-gray-500'>
+              <span className='absolute text-xl -top-10 left-0 text-red-600 dark:text-gray-600'>Angular</span>
+              <FaAngular className='text-red-600 dark:text-red-700'></FaAngular>
             </div>
-            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200'>
-              <span className='absolute text-xl -top-10 left-0 text-orange-600'>Git</span>
-              <FaGitAlt className='text-orange-600'></FaGitAlt>
+            <div className='relative shadow-lg p-10 rounded-md border-2 border-gray-200 dark:border-gray-500'>
+              <span className='absolute text-xl -top-10 left-0 text-orange-600 dark:text-gray-600'>Git</span>
+              <FaGitAlt className='text-orange-600 dark:text-orange-700'></FaGitAlt>
             </div>
           </div>
           <div className='hidden xl:text-5xl xl:mt-7 xl:text-slate-600 xl:cursor-pointer xl:animate-bounce xl:hover:text-slate-500 xl:transition-all xl:absolute xl:w-full xl:flex xl:justify-center xl:items-center'>
@@ -121,7 +121,7 @@ function Home() {
             <span></span>
             <span></span>
             <span></span>proyectos</h4>
-          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 m-3 sm:mx-20 md:mx-20 lg:mx-24 xl:mx-80'>
+          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 sm:mx-20 md:mx-20 lg:mx-24 xl:mx-80'>
             <div className='flex flex-row justify-between'>
               <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Ecommerce</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
@@ -147,7 +147,7 @@ function Home() {
               <span>Fake store API</span>
             </div>
           </article>
-          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 m-3 md:mx-20 sm:mx-20 lg:mx-24 xl:mx-80'>
+          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 md:mx-20 sm:mx-20 lg:mx-24 xl:mx-80'>
             <div className='flex flex-row justify-between'>
               <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Giphy-app</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
@@ -173,7 +173,7 @@ function Home() {
               <span>Giphy API</span>
             </div>
           </article>
-          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 m-3 sm:mx-20 md:mx-20 lg:mx-24 xl:mx-80'>
+          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 sm:mx-20 md:mx-20 lg:mx-24 xl:mx-80'>
             <div className='flex flex-row justify-between'>
               <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Proet cursos</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
@@ -199,7 +199,7 @@ function Home() {
               <span>Abstract API</span>
             </div>
           </article>
-          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 m-3 md:mx-20 sm:mx-20 lg:mx-24 xl:mx-80'>
+          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 md:mx-20 sm:mx-20 lg:mx-24 xl:mx-80'>
             <div className='flex flex-row justify-between'>
               <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Kanban-app</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
@@ -224,7 +224,7 @@ function Home() {
               <span>MUI</span>
             </div>
           </article>
-          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 m-3 sm:mx-20 md:mx-20 lg:mx-24 xl:mx-80'>
+          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 sm:mx-20 md:mx-20 lg:mx-24 xl:mx-80'>
             <div className='flex flex-row justify-between'>
               <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Rick and Morty API</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
@@ -292,23 +292,23 @@ function Home() {
               <form className="space-y-8 mb-7 mx-1" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block mb-2 text-sm  text-gray-400" >Nombre</label>
-                  <input type="text" id="name" onBlur={handleBlur} value={values.name} onChange={handleChange} className={`block p-3 w-full text-sm  bg-gray-50 rounded-lg shadow-sm outline-none border`} placeholder="Ingrese su nombre" name="name" required />
+                  <input type="text" id="name" onBlur={handleBlur} value={values.name} onChange={handleChange} className={`block p-3 w-full text-sm  bg-gray-50 dark:bg-zinc-900 rounded-lg shadow-sm outline-none border`} placeholder="Ingrese su nombre" name="name" required />
                   <label className={`${touched.name && errors.name ? 'error-text  text-sm font-semibold text-red-400' : 'hidden'}`}>{touched.name && errors.name}</label>
                 </div>
                 <div>
                   <label htmlFor="email" className={`block mb-2 text-sm  text-gray-400`}>Email</label>
-                  <input type="email" id="email" onChange={handleChange} onBlur={handleBlur} value={values.email} className={`shadow-sm bg-gray-50  text-gray-900 text-sm rounded-lg outline-none block w-full p-2.5 border border-gray-300`} placeholder="nombre@gmail.com" required name="email" />
+                  <input type="email" id="email" onChange={handleChange} onBlur={handleBlur} value={values.email} className={`shadow-sm bg-gray-50 dark:bg-zinc-900  text-gray-900 text-sm rounded-lg outline-none block w-full p-2.5 border border-gray-300`} placeholder="nombre@gmail.com" required name="email" />
                   <label className={`${touched.email && errors.email ? 'error-text  text-sm font-semibold text-red-400' : 'hidden'}`}>{touched.email && errors.email}</label>
                 </div>
                 <div className="sm:col-span-2">
                   <label htmlFor="message" className="block mb-2 text-sm  text-gray-400" >Mensage</label>
-                  <textarea id="message" rows="6" onChange={handleChange} onBlur={handleBlur} value={values.message} className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm outline-none border border-gray-300 `} placeholder="Tu mensaje" required name="message"></textarea>
+                  <textarea id="message" rows="6" onChange={handleChange} onBlur={handleBlur} value={values.message} className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-50 dark:bg-zinc-900 rounded-lg shadow-sm outline-none border border-gray-300 `} placeholder="Tu mensaje" required name="message"></textarea>
                   <label className={`${touched.message && errors.message ? 'error-text  text-sm font-semibold text-red-400' : 'hidden'}`}>{touched.message && errors.message}</label>
                 </div>
                 {
                   !errors.name && !errors.email && !errors.message &&
                   <div className='flex justify-center'>
-                    <button type="submit" disabled={state.submitting} className={`${!errors.name && !errors.email && !errors.message ? 'submit' : 'hidden'} py-1 px-24 text-lg font-medium text-center rounded-md outline-none form__submit`}>Enviar</button>
+                    <button type="submit" disabled={state.submitting} className={`${!errors.name && !errors.email && !errors.message ? 'submit' : 'hidden'} py-1 px-24 text-lg font-medium text-center rounded-md outline-none bg-gray-200 text-gray-400 transition-all hover:transition-all hover:bg-gray-300 hover:opacity-5  dark:bg-zinc-800 dark:text-gray-400 dark:hover:bg-zinc-700`}>Enviar</button>
                   </div>
                 }
               </form>

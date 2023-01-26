@@ -6,7 +6,6 @@ nav {
   top: 0;
   z-index: 100;
 }
-
 .link-project {
   position: relative;
   display: inline-block;
@@ -97,7 +96,6 @@ nav {
 .navbar-item {
   position: relative;
   width: 100%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: 400ms;
 }
 .item-link-one {
