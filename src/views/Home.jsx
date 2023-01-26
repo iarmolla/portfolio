@@ -21,7 +21,7 @@ function Home() {
 
   return (
     <main className='lg:h-screen lg:snap-y lg:snap-mandatory lg:overflow-scroll dark:bg-black'>
-      <section className='text-center pt-10 sm:pt-24 md:pt-10 dark:m-0 dark:pt-48 dark:pb-14 flex flex-col gap-3 justify-center items-center xl:m-0 one lg:h-screen mt-24 mb-10 lg:m-0 lg:p-0 '>
+      <section className='text-center pt-10 sm:pt-24 sm:dark:pt-52 md:dark:pt-32 md:pt-10 dark:m-0 dark:pt-48 dark:pb-14  flex flex-col gap-3 justify-center items-center xl:m-0 one lg:h-screen mt-24 mb-10 lg:m-0 lg:p-0'>
         <article className='w-full xl:h-screen  flex flex-col justify-center items-center justify-items-center'>
           <h1 className='text-slate-700 title text-5xl lg:text-9xl  xl:text-9xl'>Iván Armolla</h1>
           <h2 className='text-4xl text-slate-800 lg:text-4xl xl:text-7xl'>Front-end Developer.</h2>
