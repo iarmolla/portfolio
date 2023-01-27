@@ -121,9 +121,9 @@ function Home() {
             <span></span>
             <span></span>
             <span></span>proyectos</h4>
-          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 sm:mx-20 md:mx-20 lg:mx-24 xl:mx-80'>
+          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 sm:mx-20 md:mx-20 lg:w-2/4'>
             <div className='flex flex-row justify-between'>
-              <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Ecommerce</span>
+              <span className='uppercase text-left pl-3 text-gray-500 font-semibold mb-4'>Ecommerce</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
                 <a href="https://github.com/iarmolla/ecommerce-api" target={'_blank'}>
                   <FiGithub></FiGithub>
@@ -135,7 +135,7 @@ function Home() {
             </div>
             <div>
               <a href="https://ecommerce-167.netlify.app/" target={'_blank'} className='flex flex-col justify-center items-center py-2 overflow-hidden'>
-                <img src={ecommerce} className="image-project hover:scale-75" alt="ecommerce project" />
+                <img src={ecommerce} className="image-project hover:animate-pulse" alt="ecommerce project" />
               </a>
             </div>
             <p className='m-3'>Un ecommerce web con distinas secciones de productos, joyeria, tecnologia, ropa y carrito de compras.</p>
@@ -147,9 +147,9 @@ function Home() {
               <span>Fake store API</span>
             </div>
           </article>
-          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 md:mx-20 sm:mx-20 lg:mx-24 xl:mx-80'>
+          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 md:mx-20 sm:mx-20 lg:w-2/4'>
             <div className='flex flex-row justify-between'>
-              <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Giphy-app</span>
+              <span className='uppercase text-left pl-3 text-gray-500 font-semibold mb-4'>Giphy-app</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
                 <a href="https://github.com/iarmolla/giphy-app" target={"_blank"}>
                   <FiGithub></FiGithub>
@@ -161,7 +161,7 @@ function Home() {
             </div>
             <div>
               <a href="https://giphy-645.netlify.app/" target={"_blank"} className='flex flex-col justify-center items-center py-2 overflow-hidden'>
-                <img src={gif} className="image-project hover:scale-75" alt="gif project" />
+                <img src={gif} className="image-project hover:animate-pulse" alt="gif project" />
               </a>
             </div>
             <p className='m-3'>Un clon de uno de los buscadores de gifs mas populares.</p>
@@ -173,9 +173,9 @@ function Home() {
               <span>Giphy API</span>
             </div>
           </article>
-          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 sm:mx-20 md:mx-20 lg:mx-24 xl:mx-80'>
+          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 sm:mx-20 md:mx-20 lg:w-2/4'>
             <div className='flex flex-row justify-between'>
-              <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Proet cursos</span>
+              <span className='uppercase text-left pl-3 text-gray-500 font-semibold mb-4'>Proet cursos</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
                 <a href="https://github.com/iarmolla/course-react" target={'_blank'}>
                   <FiGithub></FiGithub>
@@ -187,7 +187,7 @@ function Home() {
             </div>
             <div>
               <a href="https://proet-e6dfc9.netlify.app/" target={"_blank"} className='flex flex-col justify-center items-center py-2 overflow-hidden'>
-                <img src={proet} className="image-project hover:scale-75" alt="rick and morty project" />
+                <img src={proet} className="image-project hover:animate-pulse" alt="rick and morty project" />
               </a>
             </div>
             <p className='m-3'><span className='text-gray-500 uppercase font-semibold'>Proet</span> aplicacion de cursos para suscribirte a los distintos cursos.
@@ -199,9 +199,9 @@ function Home() {
               <span>Abstract API</span>
             </div>
           </article>
-          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 md:mx-20 sm:mx-20 lg:mx-24 xl:mx-80'>
+          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 md:mx-20 sm:mx-20 lg:w-2/4'>
             <div className='flex flex-row justify-between'>
-              <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Kanban-app</span>
+              <span className='uppercase text-left pl-3 text-gray-500 font-semibold mb-4'>Kanban-app</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
                 <a href="https://github.com/iarmolla/kanban-app" target={"_blank"}>
                   <FiGithub></FiGithub>
@@ -213,7 +213,7 @@ function Home() {
             </div>
             <div>
               <a href="https://kanban-645.netlify.app" target={"_blank"} className='flex flex-col justify-center items-center py-2 overflow-hidden'>
-                <img src={kanban} className="image-project hover:scale-75" alt="kanban project" />
+                <img src={kanban} className="image-project hover:animate-pulse" alt="kanban project" />
               </a>
             </div>
             <p className='m-3'>Web app de tareas, el proyecto surgio como desafio de <span className='text-gray-500 font-semibold uppercase'>front-end mentor</span>.</p>
@@ -224,9 +224,9 @@ function Home() {
               <span>MUI</span>
             </div>
           </article>
-          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 sm:mx-20 md:mx-20 lg:mx-24 xl:mx-80'>
+          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 sm:mx-20 md:mx-20 lg:w-2/4'>
             <div className='flex flex-row justify-between'>
-              <span className='uppercase text-left pl-3 text-gray-500 font-semibold'>Rick and Morty API</span>
+              <span className='uppercase text-left pl-3 text-gray-500 font-semibold mb-4'>Rick and Morty API</span>
               <div className='flex flex-row gap-2 text-xl cursor-pointer'>
                 <a href="https://github.com/iarmolla/rick-and-morty-react" target={'_blank'}>
                   <FiGithub></FiGithub>
@@ -238,7 +238,7 @@ function Home() {
             </div>
             <div>
               <a href="https://magenta-hummingbird-5754c9.netlify.app/" target={"_blank"} className='flex flex-col justify-center items-center py-2 overflow-hidden'>
-                <img src={rick} className="image-project hover:scale-75" alt="rick and morty project" />
+                <img src={rick} className="image-project hover:animate-pulse" alt="rick and morty project" />
               </a>
             </div>
             <p className='m-3'>Web app para ver los personajes de <span className='text-gray-500 uppercase font-semibold'>Rick and morty</span> y sus episodios y fechas de  estreno, para las llamadas a la API se hizo uso de <span className='text-gray-500 font-semibold uppercase'>AXIOS</span>.</p>
