@@ -206,13 +206,13 @@ function Home() {
                 <a href="https://github.com/iarmolla/kanban-app" target={"_blank"}>
                   <FiGithub></FiGithub>
                 </a>
-                <a href="https://app.netlify.com/sites/kanban-645/overview" target={"_blank"}>
+                <a href="https://kanban-645.netlify.app" target={"_blank"}>
                   <BiLinkExternal></BiLinkExternal>
                 </a>
               </div>
             </div>
             <div>
-              <a href="https://app.netlify.com/sites/kanban-645/overview" target={"_blank"} className='flex flex-col justify-center items-center py-2 overflow-hidden'>
+              <a href="https://kanban-645.netlify.app" target={"_blank"} className='flex flex-col justify-center items-center py-2 overflow-hidden'>
                 <img src={kanban} className="image-project hover:scale-75" alt="kanban project" />
               </a>
             </div>
