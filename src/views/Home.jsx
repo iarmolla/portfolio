@@ -289,7 +289,7 @@ function Home() {
               handleChange,
               handleBlur
             }) => (
-              <form className="space-y-8 mb-7 mx-1 dark:pb-7 dark:mb-0" onSubmit={handleSubmit}>
+              <form className="space-y-8 mb-7 mx-1 pb-16 dark:mb-0 dark:pb-16" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block mb-2 text-sm  text-gray-400" >Nombre</label>
                   <input type="text" id="name" onBlur={handleBlur} value={values.name} onChange={handleChange} className={`block p-3 w-full text-sm  bg-gray-50 dark:bg-zinc-900 dark:text-gray-400 rounded-lg shadow-sm outline-none border`} placeholder="Ingrese su nombre" name="name" required />
