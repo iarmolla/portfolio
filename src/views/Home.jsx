@@ -139,7 +139,7 @@ function Home() {
               </a>
             </div>
             <p className='m-3'>Un ecommerce web con distinas secciones de productos, joyería, tecnología, ropa y carrito de compras.</p>
-            <p className='pl-3'>En lo que es el desarrollo sé usó <span className='text-slate-700 uppercase font-semibold'>react-router-dom</span> para manejar las distinas rutas que tendrá el ecommerce. Se implementó <span className='uppercase text-slate-700 font-semibold'>Redux</span> para manejar las acciones y el estado de la web app, en la creación del formulario se usó de librería formik, y las llamadas a la API, con implementación de axios, para el manejo de estilos sé usó <span className='uppercase text-indigo-600 font-semibold'>Bootstrap</span> para simplificar el desarrollo.
+            <p className='pl-3'>En lo que es el desarrollo sé usó <span className='text-slate-700 uppercase font-semibold'>react-router-dom</span> para manejar las distinas rutas que tendrá el ecommerce. Se implementó <span className='uppercase text-slate-700 font-semibold'>Redux</span> para manejar las acciones y el estado de la web app. En la creación del formulario se usó de librería formik, y las llamadas a la API, con implementación de axios, para el manejo de estilos sé usó <span className='uppercase text-indigo-600 font-semibold'>Bootstrap</span> para simplificar el desarrollo.
             </p>
             <div className='flex flex-row gap-3 pl-3 my-5 font-bold'>
               <span>React</span>
