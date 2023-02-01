@@ -39,7 +39,7 @@ function Home() {
             <span></span>
             <span></span>
             <span></span>
-            Sobre mi
+            Sobre mí
           </button>
         </div>
         <article>
@@ -138,8 +138,8 @@ function Home() {
                 <img src={ecommerce} className="image-project hover:animate-pulse" alt="ecommerce project" />
               </a>
             </div>
-            <p className='m-3'>Un ecommerce web con distinas secciones de productos, joyeria, tecnologia, ropa y carrito de compras.</p>
-            <p className='pl-3'>En lo que es el desarrollo se uso <span className='text-slate-700 uppercase font-semibold'>react-router-dom</span> para manejar las distinas rutas que tendra el ecommerce. Se implemento <span className='uppercase text-slate-700 font-semibold'>Redux</span> para manejar las acciones y el estado de la web app, en la creacion del formulario se uso de libreria formik y las llamadas a la API con implementacion de axios, para el manejo de estilos se uso <span className='uppercase text-indigo-600 font-semibold'>Bootstrap</span> para simplificar el desarrollo.
+            <p className='m-3'>Un ecommerce web con distinas secciones de productos, joyería, tecnología, ropa y carrito de compras.</p>
+            <p className='pl-3'>En lo que es el desarrollo sé usó <span className='text-slate-700 uppercase font-semibold'>react-router-dom</span> para manejar las distinas rutas que tendrá el ecommerce. Se implementó <span className='uppercase text-slate-700 font-semibold'>Redux</span> para manejar las acciones y el estado de la web app, en la creación del formulario se usó de librería formik, y las llamadas a la API, con implementación de axios, para el manejo de estilos sé usó <span className='uppercase text-indigo-600 font-semibold'>Bootstrap</span> para simplificar el desarrollo.
             </p>
             <div className='flex flex-row gap-3 pl-3 my-5 font-bold'>
               <span>React</span>
@@ -165,7 +165,7 @@ function Home() {
               </a>
             </div>
             <p className='m-3'>Un clon de uno de los buscadores de gifs mas populares.</p>
-            <p className='pl-3'>En lo que es el desarrollo para las llamadas a la API se uso <span className='uppercase text-slate-600 font-semibold'>axios,</span> para el manejo de estilos se uso <span className='uppercase text-sky-500 font-semibold'>Tailwind</span>.
+            <p className='pl-3'>En lo que es el desarrollo para las llamadas a la API se usó <span className='uppercase text-slate-600 font-semibold'>axios,</span> para el manejo de estilos sé usó <span className='uppercase text-sky-500 font-semibold'>Tailwind</span>.
             </p>
             <div className='flex flex-row gap-3 pl-3 my-5 font-bold'>
               <span>React</span>
@@ -190,7 +190,7 @@ function Home() {
                 <img src={proet} className="image-project hover:animate-pulse" alt="rick and morty project" />
               </a>
             </div>
-            <p className='m-3'><span className='text-gray-500 uppercase font-semibold'>Proet</span> aplicacion de cursos para suscribirte a los distintos cursos.
+            <p className='m-3'><span className='text-gray-500 uppercase font-semibold'>Proet</span> aplicación de cursos para suscribirte a los distintos cursos.
               Sección de compras con tarjeta de credito validaciones de email y envios del mismo al finalizar la compra.
             </p>
             <div className='flex flex-row gap-3 pl-3 my-5 font-bold flex-wrap'>
@@ -216,8 +216,8 @@ function Home() {
                 <img src={kanban} className="image-project hover:animate-pulse" alt="kanban project" />
               </a>
             </div>
-            <p className='m-3'>Web app de tareas, el proyecto surgio como desafio de <span className='text-gray-500 font-semibold uppercase'>front-end mentor</span>.</p>
-            <p className='pl-3'>En lo que es el desarrollo para el manejo de estilos se uso <span className='uppercase text-sky-500 font-semibold'>MUI</span>.
+            <p className='m-3'>Web app de tareas, el proyecto surgió como desafio de <span className='text-gray-500 font-semibold uppercase'>front-end mentor</span>.</p>
+            <p className='pl-3'>En lo que es el desarrollo para el manejo de estilos sé usó <span className='uppercase text-sky-500 font-semibold'>MUI</span>.
             </p>
             <div className='flex flex-row gap-3 pl-3 my-5 font-bold'>
               <span>React</span>
@@ -241,8 +241,8 @@ function Home() {
                 <img src={rick} className="image-project hover:animate-pulse" alt="rick and morty project" />
               </a>
             </div>
-            <p className='m-3'>Web app para ver los personajes de <span className='text-gray-500 uppercase font-semibold'>Rick and morty</span> y sus episodios y fechas de  estreno, para las llamadas a la API se hizo uso de <span className='text-gray-500 font-semibold uppercase'>AXIOS</span>.</p>
-            <p className='pl-3'>para el manejo de estilos se uso <span className='uppercase text-sky-500 font-semibold'>Tailwind</span>.
+            <p className='m-3'>Web app para ver los personajes de <span className='text-gray-500 uppercase font-semibold'>Rick and Morty</span>,episodios y fechas de  estreno, para las llamadas a la API se hizo usó de <span className='text-gray-500 font-semibold uppercase'>AXIOS</span>.</p>
+            <p className='pl-3'>para el manejo de estilos sé usó <span className='uppercase text-sky-500 font-semibold'>Tailwind</span>.
             </p>
             <div className='flex flex-row gap-3 pl-3 my-5 font-bold flex-wrap'>
               <span>React</span>
@@ -254,7 +254,7 @@ function Home() {
       </section>
       <section className="five" id="contact">
         <div className="mx-auto max-w-screen-md">
-          <h2 className="mb-4 text-4xl tracking-tight text-zinc-400 text-center mt-6">Enviame un mensaje!</h2>
+          <h2 className="mb-4 text-4xl tracking-tight text-zinc-400 text-center mt-6">Envíame un mensaje!</h2>
           <p className="lg:mb-10 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Si tienes alguna pregunta o quieres contactarme puedes usar el formulario</p>
           <Formik
             initialValues={{ name: '', email: '', message: '' }}
