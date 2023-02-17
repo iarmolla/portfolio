@@ -10,6 +10,8 @@ import rick from '../assets/rick.PNG'
 import kanban from '../assets/kanban.PNG'
 import proet from '../assets/proet.PNG'
 import gif from '../assets/gif.PNG'
+import dashboard from '../assets/dashboard.png'
+
 import ecommerce from '../assets/ecommerce.PNG'
 import { Formik } from 'formik'
 import { useForm } from '@formspree/react';
@@ -248,6 +250,35 @@ function Home() {
               <span>React</span>
               <span>Tailwind</span>
               <span>Rick and Morty API</span>
+            </div>
+          </article>
+          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 sm:mx-20 md:mx-20 lg:w-2/4'>
+            <div className='flex flex-row justify-between'>
+              <span className='uppercase text-left pl-3 text-gray-500 font-semibold mb-4'>Dashboard</span>
+              <div className='flex flex-row gap-2 text-xl cursor-pointer'>
+                <a href="https://github.com/iarmolla/dashboard-react" target={'_blank'}>
+                  <FiGithub></FiGithub>
+                </a>
+                <a href="https://chimerical-mandazi-47f4f8.netlify.app/login" target={"_blank"}>
+                  <BiLinkExternal></BiLinkExternal>
+                </a>
+              </div>
+            </div>
+            <div>
+              <a href="https://chimerical-mandazi-47f4f8.netlify.app/login" target={"_blank"} className='flex flex-col justify-center items-center py-2 overflow-hidden'>
+                <img src={dashboard} className="image-project hover:animate-pulse" alt="dashboard project" />
+              </a>
+            </div>
+            <p className='m-3'>Panel de administración: El objetivo es obtener, un control organizado de los empleados, que estén registrados. El panel ofrece gráficos del sueldo que recibe el empleado para tener una mejor visualización del mismo, y poder tomar decisiones con lo anterior.
+           </p>
+            <p className='pl-3'>Backend hecho en <span className='uppercase text-sky-500 font-semibold'>Express - Mysql</span>.
+            </p>
+            <div className='flex flex-row gap-3 pl-3 my-5 font-bold flex-wrap'>
+              <span>React</span>
+              <span>Tailwind</span>
+              <span>Recharts</span>
+              <span>Mysql</span>
+              <span>Express</span>
             </div>
           </article>
         </section>
