@@ -1,4 +1,5 @@
 import React from 'react'
+import cv from '../assets/cv.pdf'
 
 function NavBar() {
   return (
@@ -24,6 +25,13 @@ function NavBar() {
               Proyectos
               <span className="item-link-one"></span>
             </a>
+          </section>
+          <section className='navbar-item'>
+            <a href={cv} download className='link item-link text-sm'>
+              Curriculum
+              <span className="item-link-one"></span>
+            </a>
+            
           </section>
         </section>
       </nav>
