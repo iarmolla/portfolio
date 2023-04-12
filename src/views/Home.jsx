@@ -149,32 +149,6 @@ function Home() {
               <span>Fake store API</span>
             </div>
           </article>
-          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 md:mx-20 sm:mx-20 lg:w-2/4'>
-            <div className='flex flex-row justify-between'>
-              <span className='uppercase text-left pl-3 text-gray-500 font-semibold mb-4'>Giphy-app</span>
-              <div className='flex flex-row gap-2 text-xl cursor-pointer'>
-                <a href="https://github.com/iarmolla/giphy-app" target={"_blank"}>
-                  <FiGithub></FiGithub>
-                </a>
-                <a href="https://giphy-645.netlify.app/" target={"_blank"}>
-                  <BiLinkExternal></BiLinkExternal>
-                </a>
-              </div>
-            </div>
-            <div>
-              <a href="https://giphy-645.netlify.app/" target={"_blank"} className='flex flex-col justify-center items-center py-2 overflow-hidden'>
-                <img src={gif} className="image-project hover:animate-pulse" alt="gif project" />
-              </a>
-            </div>
-            <p className='m-3'>Un clon de uno de los buscadores de gifs mas populares.</p>
-            <p className='pl-3'>En lo que es el desarrollo para las llamadas a la API se usó <span className='uppercase text-slate-600 font-semibold'>axios,</span> y para el manejo de estilos se usó <span className='uppercase text-sky-500 font-semibold'>Tailwind</span>.
-            </p>
-            <div className='flex flex-row gap-3 pl-3 my-5 font-bold'>
-              <span>React</span>
-              <span>Tailwind</span>
-              <span>Giphy API</span>
-            </div>
-          </article>
           <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 sm:mx-20 md:mx-20 lg:w-2/4'>
             <div className='flex flex-row justify-between'>
               <span className='uppercase text-left pl-3 text-gray-500 font-semibold mb-4'>Proet cursos</span>
@@ -201,6 +175,60 @@ function Home() {
               <span>Abstract API</span>
             </div>
           </article>
+          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 sm:mx-20 md:mx-20 lg:w-2/4'>
+            <div className='flex flex-row justify-between'>
+              <span className='uppercase text-left pl-3 text-gray-500 font-semibold mb-4'>Chat</span>
+              <div className='flex flex-row gap-2 text-xl cursor-pointer'>
+                <a href="https://github.com/iarmolla/chat-react" target={'_blank'}>
+                  <FiGithub></FiGithub>
+                </a>
+                <a href="https://golden-pithivier-8c6fd5.netlify.app/" target={"_blank"}>
+                  <BiLinkExternal></BiLinkExternal>
+                </a>
+              </div>
+            </div>
+            <div>
+              <a href="https://golden-pithivier-8c6fd5.netlify.app/" target={"_blank"} className='flex flex-col justify-center items-center py-2 overflow-hidden'>
+                <img src={chat} className="image-project hover:animate-pulse" alt="dashboard project" />
+              </a>
+            </div>
+            <p className='m-3'>Este proyecto consiste en un chat en tiempo real construido con React en el frontend y Node.js en el backend. El objetivo es mostrar cómo se puede crear una aplicación de chat funcional utilizando estas tecnologías.
+            </p>
+            <p className='pl-3'>Backend hecho en <span className='uppercase text-sky-500 font-semibold'>Express - Mongodb</span>.
+            </p>
+            <div className='flex flex-row gap-3 pl-3 my-5 font-bold flex-wrap'>
+              <span>React</span>
+              <span>Tailwind</span>
+              <span>Nodejs</span>
+              <span>Mongodb</span>
+            </div>
+          </article>  
+          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 md:mx-20 sm:mx-20 lg:w-2/4'>
+            <div className='flex flex-row justify-between'>
+              <span className='uppercase text-left pl-3 text-gray-500 font-semibold mb-4'>Giphy-app</span>
+              <div className='flex flex-row gap-2 text-xl cursor-pointer'>
+                <a href="https://github.com/iarmolla/giphy-app" target={"_blank"}>
+                  <FiGithub></FiGithub>
+                </a>
+                <a href="https://giphy-645.netlify.app/" target={"_blank"}>
+                  <BiLinkExternal></BiLinkExternal>
+                </a>
+              </div>
+            </div>
+            <div>
+              <a href="https://giphy-645.netlify.app/" target={"_blank"} className='flex flex-col justify-center items-center py-2 overflow-hidden'>
+                <img src={gif} className="image-project hover:animate-pulse" alt="gif project" />
+              </a>
+            </div>
+            <p className='m-3'>Un clon de uno de los buscadores de gifs mas populares.</p>
+            <p className='pl-3'>En lo que es el desarrollo para las llamadas a la API se usó <span className='uppercase text-slate-600 font-semibold'>axios,</span> y para el manejo de estilos se usó <span className='uppercase text-sky-500 font-semibold'>Tailwind</span>.
+            </p>
+            <div className='flex flex-row gap-3 pl-3 my-5 font-bold'>
+              <span>React</span>
+              <span>Tailwind</span>
+              <span>Giphy API</span>
+            </div>
+          </article>  
           <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 md:mx-20 sm:mx-20 lg:w-2/4'>
             <div className='flex flex-row justify-between'>
               <span className='uppercase text-left pl-3 text-gray-500 font-semibold mb-4'>Kanban-app</span>
@@ -279,34 +307,6 @@ function Home() {
               <span>Recharts</span>
               <span>Mysql</span>
               <span>Express</span>
-            </div>
-          </article>
-          <article className='shadow-lg p-3 text-gray-500 rounded-md border-2 border-gray-200 dark:border-gray-500 m-3 sm:mx-20 md:mx-20 lg:w-2/4'>
-            <div className='flex flex-row justify-between'>
-              <span className='uppercase text-left pl-3 text-gray-500 font-semibold mb-4'>Chat</span>
-              <div className='flex flex-row gap-2 text-xl cursor-pointer'>
-                <a href="https://github.com/iarmolla/chat-react" target={'_blank'}>
-                  <FiGithub></FiGithub>
-                </a>
-                <a href="https://golden-pithivier-8c6fd5.netlify.app/" target={"_blank"}>
-                  <BiLinkExternal></BiLinkExternal>
-                </a>
-              </div>
-            </div>
-            <div>
-              <a href="https://golden-pithivier-8c6fd5.netlify.app/" target={"_blank"} className='flex flex-col justify-center items-center py-2 overflow-hidden'>
-                <img src={chat} className="image-project hover:animate-pulse" alt="dashboard project" />
-              </a>
-            </div>
-            <p className='m-3'>Este proyecto consiste en un chat en tiempo real construido con React en el frontend y Node.js en el backend. El objetivo es mostrar cómo se puede crear una aplicación de chat funcional utilizando estas tecnologías.
-            </p>
-            <p className='pl-3'>Backend hecho en <span className='uppercase text-sky-500 font-semibold'>Express - Mongodb</span>.
-            </p>
-            <div className='flex flex-row gap-3 pl-3 my-5 font-bold flex-wrap'>
-              <span>React</span>
-              <span>Tailwind</span>
-              <span>Nodejs</span>
-              <span>Mongodb</span>
             </div>
           </article>
         </section>
