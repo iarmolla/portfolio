@@ -7,13 +7,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-name: zoom;
+    animation-duration: .5s;
   }
   
   .modal-container {
     position: relative;
     border-radius: 0.5rem;
     padding: 1.5rem;
-    background-color: #1F1F1F;
     overflow-y: auto; 
   }
   
@@ -38,3 +39,11 @@
     padding: 0;
   }
   
+  @keyframes zoom {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
