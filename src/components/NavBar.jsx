@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import cv from '../assets/cv.pdf'
 import Modal from './Modal'
 
@@ -6,7 +6,7 @@ function NavBar() {
   const [show, setShow] = useState(false)
   const handleClose = () => {
     setShow(false)
-};
+  };
   return (
     <nav className='z-10 text-neutral-400 flex justify-between items-center min-w-full shadow-sm py-4 px-5 bg-slate-50 dark:bg-black'>
       <div>
@@ -39,7 +39,7 @@ function NavBar() {
             <span className="item-link-one"></span>
           </a>
         </section>
-      <Modal show={show} handleClose={handleClose}></Modal>
+        <Modal show={show} handleClose={handleClose}></Modal>
       </section>
     </nav>
   )
