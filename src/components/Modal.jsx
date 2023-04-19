@@ -1,21 +1,52 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/modal.css';
-import Form from '../components/Form'
 import { Formik } from 'formik'
 import { useForm } from '@formspree/react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Modal({ show, handleClose }) {
     const [state, submit] = useForm('mdovnqgv')
-    const [showModal, setShowModal] = useState(true);
     const [modal, setModal] = useState(false)
+    const [darkMode, setDarkMode] = useState(false)
     useEffect(() => {
         setModal(show)
     }, [show])
+    const notify = () => toast("¡Enviado con exito!", {
+        theme: darkMode ? 'dark' : 'light',
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
+    useEffect(() => {
+        const mq = window.matchMedia('(prefers-color-scheme: dark)')
+        if (mq.matches) {
+            setDarkMode(true)
+        } else {
+            setDarkMode(false)
+        }
+        const handleChange = () => {
+            if (mq.matches) {
+                setDarkMode(true)
+            } else {
+                setDarkMode(false)
+            }
+        }
+        mq.addListener(handleChange)
+        return () => {
+            mq.removeListener(handleChange)
+        }
+    }, [window.matchMedia])
     return (
         <div>
             {modal ? <>
                 <div className="modal-background">
-                    <div className="modal-container">
+                    <ToastContainer />
+                    <div className="modal-container bg-slate-50 border-2 border-gray-200 dark:bg-zinc-900 dark:border-0">
                         <div className="modal-header">
                             <button className="modal-close" onClick={() => {
                                 handleClose()
@@ -33,13 +64,13 @@ function Modal({ show, handleClose }) {
                                         validate={(values) => {
                                             let errors = {}
                                             if (!values.message) {
-                                                errors.message = "* El mensaje no puede estar vacio *"
+                                                errors.message = "* Mensaje requerido *"
                                             }
                                             if (!values.name) {
                                                 errors.name = "* El nombre no puede estar vacio *"
                                             }
                                             if (!values.email) {
-                                                errors.email = '* El mail no puede estar vacio *';
+                                                errors.email = '* El correo electrónico no puede estar vacío *';
                                             } else if (
                                                 !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
                                             ) {
@@ -49,9 +80,11 @@ function Modal({ show, handleClose }) {
                                         }}
                                         onSubmit={(values, { resetForm }) => {
                                             submit(values)
-                                            setShowModal(true)
+                                            notify()
                                             resetForm()
-                                            setTimeout(() => setShowModal(false), 3000)
+                                            setTimeout(() => {
+                                                handleClose()
+                                            },1000)
                                         }}
                                     >
                                         {({ handleSubmit,
@@ -86,7 +119,6 @@ function Modal({ show, handleClose }) {
                                             </form>
                                         )}
                                     </Formik>
-                                    <Form setShowModal={setShowModal} showModal={showModal}></Form>
                                 </div>
                             </section>
                         </div>
