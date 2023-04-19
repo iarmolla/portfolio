@@ -156,11 +156,13 @@ main {
   overflow-y: scroll;
   height: 100vh; */
   scroll-behavior: smooth;
+  scroll-padding-bottom: 5rem; 
 }
 
-.one,.two,.three,.four,.five{
+.one,.two,.three,.four{
   scroll-behavior: smooth;
   scroll-snap-align: start;
+  padding-bottom: 1rem;
 }
 main::-webkit-scrollbar {display: none;}
 ::-webkit-scrollbar { width: 9px; height: 9px;}
@@ -177,3 +179,5 @@ main::-webkit-scrollbar {display: none;}
   transition: 300ms;
   background-color: rgba(224, 224, 224, 0.9);
 }
+
+
