@@ -20,7 +20,7 @@ function NavBar() {
           </a>
         </section>
         <section className='navbar-item'>
-          <a className='link item-link text-sm' onClick={() => {
+          <a className='link item-link text-sm cursor-pointer' onClick={() => {
             setShow(true)
           }} >
             Contacto
